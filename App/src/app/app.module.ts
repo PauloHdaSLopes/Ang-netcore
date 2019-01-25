@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/Http';
 import { NavComponent } from './nav/nav.component';
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './_services/auth.service';
@@ -25,7 +26,8 @@ import { ErrorInteceptor } from './_services/error.interceptor';
       BrowserModule,
       AppRoutingModule,
       HttpClientModule,
-      FormsModule
+      FormsModule,
+      BsDropdownModule.forRoot()
    ],
    providers: [
       AuthService,
