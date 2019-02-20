@@ -23,8 +23,11 @@ namespace Course.API.Helpers
                 .ForMember(dest => dest.Age, opt => {
                     opt.ResolveUsing(d => d.DateOfBirth.CalculateAge());
                 });
-            CreateMap<Photo,PhotosForDetailedDto>();
             CreateMap<UserForUpdateDto,User>();
+
+            CreateMap<Photo,PhotosForDetailedDto>();
+            CreateMap<Photo,PhotoForReturnDto>();
+            CreateMap<PhotoForCreationDto,Photo>();
         }
     }
 }
