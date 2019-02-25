@@ -28,6 +28,7 @@ namespace Course.API.Helpers
             CreateMap<Photo,PhotosForDetailedDto>();
             CreateMap<Photo,PhotoForReturnDto>();
             CreateMap<PhotoForCreationDto,Photo>();
+            CreateMap<UserForRegisterDto,User>();
         }
     }
 }
